@@ -101,7 +101,7 @@
   * friend-finder.js changes are now staged.
 
   ```
-  $: git commit -m "Add movitational console logs"
+  $: git commit -m "Add motivational console logs"
   ```
 
   * Once again the console output will show:
@@ -125,7 +125,7 @@
 
   ##### Day 4
   * You come into the office only to realize that Jerry's mad-scientist ex-step-father Rick is trying to sabotage your app. And he's done a damn good job. He left his name etched on your desk and your laptop has been covered in some mysterious green goo. You wipe it down and it makes your whole body feel tingly and turns your skin blue temporarily. You try to reboot your computer but to no avail. All your code... is gone.
-  * For the sake of this example, let's assume you came back to this document and repeated all these steps. You finally regained all your precious work, but you've lost an entire day. Its now night and you are ready to go home, but you're determined to never let this happen again.
+  * For the sake of this example, let's assume you came back to this document and repeated all these steps. You finally regained all your precious work, but you've lost an entire day. The sun has set and you are ready to go home, but you're determined to never let this happen again.
   * Enter Github.
   #### Remote Repositories
   * Thus far we've been committing code to a __local__ repository. It only lives on your local machine. This is a big difference between Git and other Version Control Systems like say SVN. Let's take a minute exploring how SVN works to highlight the differences and importance in the Git Workflow.
@@ -138,11 +138,11 @@
     * A decentralized version control system has costs and benefits, but is great for collaboration.
     * When it does come time to _push_ your code to a remote server, Git doesn't seem to care _where_ you want to store your code.
       * You could have one centralized server, like in the above example with SVN, or you could push your code to multiple different servers.
-      * Github is the world's largest open source source code repository system. In this example we are going to use Github as our `Remote Repository`. If Rick come back to ruin our code, who cares?
+      * Github is the world's largest source code repository system for the open source community. In this example we are going to use Github as our `Remote Repository`. If Rick come back to ruin our code, who cares?
     #### Github Setup
     * [Sign up for Github](https://github.com/) if you haven't already.
     * The most secure way of allowing your local machine to communicate with Github servers is via `SSH`. If you aren't familiar with SSH RSA key pairs here is the highly non-technical TL;DR:
-      * SSH RSA key pairs allow your computer to _shake hands_ with a remote server. When the remote server recognizes your key pair, it will _trust_ your computer to push code to it via the SSH protocol. 
+      * SSH RSA key pairs allow your computer to _shake hands_ with a remote server. When the remote server recognizes your key pair, it will _trust_ your computer to push code to it via the SSH protocol.
     * Github will also allow for your to push your code via `HTTPS`. But because you wont be using a key in this situation, the only way Github will know to trust you is by you manually inputing your username and password each time you push.
     * I recommend following Github's guide for [generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
     * Once you have generated a local ssh key, you will need to [add the public key to your Github account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
@@ -161,7 +161,7 @@
       ```
         * Let's disect that a little bit.
         * `git remote add` - indicates you are setting up a remote repository.
-        * `origin` 
+        * `origin`
           * The word origin here may seem like syntax but it's actually arbitrary. This is simply the name of the remote repo.
           * This could just as easily have been `my_repo` or whatever. Most of the time for most people, they will only have 1 source code server. And in this case we are no exception.
           * The usual standard when dealing with 1 remote repo is to name that repo `origin`. This is what you will see in most cases. So we will settle on `origin`.
